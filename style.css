@@ -1,0 +1,8 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.custom-container {
+    padding-left: 1rem; /* You can adjust the left padding as needed */
+    padding-right: 1rem; /* You can adjust the right padding as needed */
+}

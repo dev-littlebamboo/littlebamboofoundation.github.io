@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Bamboo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body class="font-[Poppins]  h-screen">
+
+    <header class="bg-white">
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div class="flex items-center">
+                <img class="w-16 cursor-pointer" src="/assets/images/logo/lbf-logo.svg" alt="Little Bamboo Foundation Logo">
+                <h1 class="text-sm ">Little Bamboo Foundation</h1>
+            </div>
+            <div class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row text-[#bdbf09] flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-gray-500" href="/views/home.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="/views/news.html">News</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="/views/about.html">About</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="/views/program.html">Programs</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="/views/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <button class="bg-[#f9a620] text-white px-5 py-2 rounded-full hover:bg-[#f26430]">Donate</button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content-area">
+        <!-- Load home.html by default when the page loads -->
+    </div>
+
+    <script>
+        const navLinks = document.querySelector('.nav-links');
+
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu';
+            navLinks.classList.toggle('top-[9%]');
+        }
+
+        const navigationLinks = document.querySelectorAll('.nav-links a');
+        const contentArea = document.querySelector('.content-area');
+
+        // Function to load home.html into the content area
+        function loadHomePage() {
+            fetch('/views/home.html') // Use the correct absolute path to home.html
+                .then(response => response.text())
+                .then(data => {
+                    contentArea.innerHTML = data;
+                });
+        }
+
+        // Call the function to load the home page by default upon page load
+        loadHomePage();
+
+        navigationLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+
+                // Load the content of the clicked screen into the content area
+                fetch(link.href)
+                    .then(response => response.text())
+                    .then(data => {
+                        contentArea.innerHTML = data;
+                    });
+            });
+        });
+    </script>
+</body>
+</html>

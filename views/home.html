@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Little Bamboo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+</head>
+<body>
+
+    <div class=" bg-[#D6FCD3]">
+        <div class="container mx-auto px-10 py-16">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+
+                    <div class="md:w-6/12 mb-6 md:mb-0">
+                        <h1 class="text-4xl font-bold">Little Bamboo Foundation</h1>
+                            <p class="text-lg mt-2">Development through education in the Philippines</p>
+                            <div class="pt-3 pr-16">
+                                <p class="text-lg mt-2 text-justify" >We are a Filipino charity foundation with a solid track record and roughly 600 beneficiaries with children from the slums of Cebu’s harbor. Our qualified team of 15 Filipinos & an 8-member board runs a preschool, a scholarship, and a family development program.</p>
+                            </div>
+                        <div class="mt-8">
+                            <button class="bg-[#f9a620] text-white px-16 py-4 rounded-full hover:bg-[#f26430]">Learn More</button>
+                            <ion-icon onclick="onToggleMenu(this)" name="LearnMore" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                        </div>
+                    </div>
+
+                <div class="md:w-6/12">
+                    <img class="w-full rounded-lg" src="/assets/images/banner-img.jpg" alt="Home Image">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+    <div class="bg-white">
+        <div class="container mx-auto px-10 py-16 mt-4 mb-8">
+            <div class="flex items-center justify-between mb-10">
+                <h1 class="text-4xl">Our Programs</h1>
+                <div>
+                    <button class="bg-[#f9a620] text-white px-16 py-4 rounded-full hover:bg-[#f26430]">View All Programs</button>
+                    <ion-icon onclick="onToggleMenu(this)" name="LearnMore" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                </div>
+            </div>
+    
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+                <div>
+                    <img class="w-full h-64 object-cover border border-black-400" src="/assets/images/children-1.jpg" alt="Image 1">
+                    <p class="flex items-center text-xl pt-3 pb-3 font-semibold">Education</span></p>
+                    <p class="flex items-center text-gray-500">Following a curriculum centered on the needs of a child, that was created by an expert educational consultant.</p>
+                    <button class="pt-3 text-blue-500">Read More</button>
+                </div>
+                
+    
+                <div>
+                    <img class="w-full h-64 object-cover border border-black-400" src="/assets/images/children-2.jpg" alt="Image 2">
+                    <p class="flex items-center text-xl pt-3 pb-3 font-semibold">Scholarship</span></p>
+                    <p class="flex items-center text-gray-500">Helping children in the public education system after they have left the Little Bamboo pre-school.</p>
+                    <button class="pt-3 text-blue-500">Read More</button>
+                </div>
+    
+                <div>
+                    <img class="w-full h-64 object-cover border border-black-400" src="/assets/images/children-3.jpg" alt="Image 3">
+                   
+                    <p class="flex items-center pt-3 text-xl pb-3 font-semibold">Family Development</span></p>
+                        <p class="flex items-center text-gray-500">Reinforcing the link between parents and children and fostering responsible parenthood.</p>
+                        <button class="pt-3 text-blue-500">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#D6FCD3] ">
+        <div class="container mx-auto px-10 py-16 mt-4 mb-8">
+            <h1 class="text-4xl mb-16">Trusted by numerous Donors Supporters Philanthropists</h1>
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-4/12">
+                        <img class="w-96 h-72 md:h-auto md:w-full rounded-lg object-contain" src="/assets/images/banner-img.jpg" alt="Home Image">
+                    </div>
+                
+                    <div class="pl-6 md:w-8/12 mb-6 md:mb-0 flex flex-col justify-between">
+                        <div>
+                            <p class="text-lg font-semibold">Cope Family, London</p>
+                            <div class="pt-3">
+                                <p class="text-lg mt-2 text-justify text-gray-500">Little Bamboo is one of those rare organisations that truly changes children’s lives. Not just in tiny degrees, but dramatically - giving them hope and prospects where previously they had none. What the team has achieved, despite limited resources, has been stunning. It has been a great pleasure for us to be associated with this project. Many thanks to you all!</p>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <button class="bg-[#f9a620] text-white px-16 py-4 rounded-full hover:bg-[#f26430]">View All Testimonials</button>
+                            <ion-icon onclick="onToggleMenu(this)" name="LearnMore" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="bg-white">
+        <div class="container mx-auto px-10 py-16">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+    
+                <div class="md:w-6/12 mb-6 md:mb-0">
+                    <h1 class="text-4xl font-semibold">Our Philosophy</h1>
+                    <div class="pt-3 pr-16">
+                        <p class="text-lg mt-2 text-justify">The parents of Little Bamboo children can give them a good education irrespective of their poverty. By taking part in our program, families commit to either making a small financial contribution,or spending time supporting the school.</p>
+                    </div>
+                    <div class="mt-8">
+                        <button class="bg-[#f9a620] text-white px-16 py-4 rounded-full hover:bg-[#f26430]">Visit Youtube Chanel</button>
+                        <ion-icon onclick="onToggleMenu(this)" name="LearnMore" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                    </div>
+                </div>
+    
+                <div class="md:w-6/12">
+                    <!-- Paste the video element here -->
+                    <video width=full height="315" controls>
+                        <source src="/assets/video/LBF-short-clip.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="bg-white">
+        
+        <div class="container mx-auto px-10 py-16">
+            <div class="flex items-center justify-center">
+                <div class="flex-grow border-t border-black"></div>
+                <h1 class="text-4xl font-medium mx-4">Meet the Team</h1>
+                <div class="flex-grow border-t border-black"></div>
+              </div>
+               
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+                    <div>
+                        <img class="w-full h-64 object-cover border border-black-400" src="/assets/images/children-1.jpg" alt="Image 1">
+                        <p class="flex items-center text-xl pt-3 font-semibold">Founder</span></p>
+                        <p class="flex items-center text-gray-500">How it all started, by Anne de Vesian von Bredow.</br></br> Little Bamboo has been the most fulfilling project I have ever worked on. In 2002, I knew I had been extremely privileged to have loving parents, and to grow up in a prosperous country such as France.</p>
+
+                        <button class="pt-3 text-blue-500">Read More</button>
+                    </div>
+                    
+        
+                    <div>
+                        <img class="w-full h-64 object-cover border border-black-400" src="/assets/images/children-2.jpg" alt="Image 2">
+                        <p class="flex items-center text-xl pt-3  font-semibold">The Staff</span></p>
+                        <p class="flex items-center text-gray-500">Ravelyn, former coordinator.</br></br>When Anne de Vesian interviewed me I have felt her true compassion and love to our deprived Filipino children. And I could not help but be mesmerised by her sincerest desire to give them equal opportunities in life and free themselves from the quagmire of inhereted poverty.</p>
+                       
+                        <button class="pt-3 text-blue-500">Read More</button>
+                    </div>
+        
+                   
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <div class="bg-[#D6FCD3]">
+        <div class="container mx-auto px-4 md:px-10 py-8 md:py-16 mt-4 mb-8">
+            <h1 class="text-3xl md:text-4xl text-center">Subscribe to Newsletter</h1>
+            <h1 class="text-sm text-center pt-3">Enter your email address to register for our newsletter subscription!</h1>
+    
+            <div class="mt-6 md:mt-8 flex flex-col md:flex-row items-center justify-center">
+                <input type="email" class="border border-gray-300 px-4 py-2 rounded-lg focus:outline-none focus:ring focus:border-blue-300 mt-4 md:mt-0 md:mr-2 w-full md:w-auto" placeholder="Enter your email address">
+                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg mt-4 md:mt-0 w-full md:w-auto">Subscribe</button>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    
+    <div class="bg-white ">
+        <div class="container mx-auto px-10 py-16">
+            
+           <div>
+                
+            </div>
+           
+            <div class="flex flex-col justify-between md:flex-row w-auto mx-auto">
+                    <div class="md:w-1/2 mb-6 md:mb-0  m-5 rounded-lg">
+                        <img class="w-96 h-72 rounded-lg" src="/assets/images/logo/lbf-logo.svg" alt="Image 3">
+                        
+                    </div>
+                    
+                    <div class="md:w-1/2 mb-6 md:mb-0   mt-5 rounded-lg">
+                        <ul class="list-disc">
+                            <li class="text-sm ">Little Bamboo Found Inc-Philippines CN200321442 DSWD- FOVII RL-0071-2011</li>
+                            <li class="text-sm mt-5">Little Bamboo Deutschland e.V gemeinnütziger Verein</li>
+                        </ul>
+                       </div>
+
+                    <div class="md:w-1/2 mb-6 md:mb-0  m-5 rounded-lg">
+                        <p class="text-sm text-center">Imprint & Dataprivacy</p>
+                    </div>
+                 </div>
+           
+             </div>
+        </div>   
+    </div>
+
+    <!-- Add any additional JavaScript specific to the home page if needed -->
+
+</body>
+</html>
