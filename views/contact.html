@@ -4,14 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Little Bamboo</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
     <!-- Add any additional CSS or meta tags specific to the home page if needed -->
 </head>
 <body>
-    <!-- Add your home page content here -->
-    <div class="content">
-       contact
+    <div class="bg-[#D6FCD3]">
+        <div class="container mx-auto px-10 py-16">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+    
+                <div class="w-full text-center"> 
+                    <h1 class="text-lg">Little Bamboo Foundation</h1>
+                    <h1 class="text-6xl font-bold mt-2 text-[#71C21F]">Contact Us</h1>
+                </div>
+    
+            </div>
+        </div>
     </div>
-
-    <!-- Add any additional JavaScript specific to the home page if needed -->
+    <div class="bg-white">
+        <div class="container mx-auto px-10 py-16 flex flex-col md:flex-row items-stretch">
+            <div class="md:w-6/12 mb-6 md:mb-0  flex-1 p-8">
+                <h1 class="text-2xl">Have Questions?</h1>
+                <p class="text-base text-gray-500 mt-2">Please feel free to call or email us, or use our contact form to get in touch with us. We look forward to hearing from you!</p>
+    
+                <div >
+                    <p class="text-lg mt-4">Call Us</p>
+                    <div class="bg-[#E2FCAA] p-2 rounded-lg" >
+                        
+                        <p class="text-base mt-2"><ion-icon name="call"></ion-icon> +63 32 416 6406</p>
+                    </div>
+                    
+                </div>
+    
+                <div>
+                    <p class="text-lg mt-4">Send Us Mail</p>
+                    <div class="bg-[#E2FCAA] p-2 rounded-lg"><p class="text-base mt-2"><ion-icon name="mail"></ion-icon> littlebamboosponsorship@gmail.com</p></div>
+                    
+                </div>
+    
+                <div>
+                    <p class="text-lg mt-4">Our Location</p>
+                    <div class="bg-[#E2FCAA] p-2 mb-4 rounded-lg" ><p class="text-sm mt-2"><ion-icon name="pin"></ion-icon> Little Bamboo Foundation, Inc. 46 Dionisio Jakosalem St, Cebu City, 6000 Cebu</p>
+                    </div>
+                    <!-- Embedded Google Map with Red Marker using iframe (smaller size) -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.594946996823!2d123.89864017426574!3d10.294183767905142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99969218c2511%3A0xac422f6f4f597100!2sLittle%20Bamboo%20Foundation%2C%20Inc.!5e0!3m2!1sen!2sph!4v1690509365456!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+            </div>
+    
+            <div class="md:w-6/12 mb-6 md:mb-0  bg-[#E2FCAA] rounded-lg flex-1 p-8">
+                <h1 class="text-2xl ">Contact Us</h1>
+                <p class="text-base text-gray-500 mt-2">You can also send us a message here and we'll respond promptly to address your inquiries or concerns.</p>
+    
+                <!-- Form for Name, Email, and Message -->
+                <form class="pt-8">
+                    <div class="mb-4">
+                       
+                        <input type="text" id="name" name="name" class="w-full rounded-lg p-2" placeholder="Name" required>
+                    </div>
+    
+                    <div class="mb-4">
+                       
+                        <input type="email" id="email" name="email" class="w-full rounded-lg p-2" placeholder="Email" required>
+                    </div>
+    
+                    <div class="mb-4">
+                       
+                        <textarea id="message" name="message" class="w-full rounded-lg p-2" rows="4" placeholder="Enter your message" required></textarea>
+                    </div>
+    
+                    <button type="submit" class="bg-[#f9a620] text-white px-12 py-2 rounded-lg hover:bg-[#f26430]">Send Message</button>
+                </form>
+            </div>
+    
+        </div>
+    </div>
+    
+    
+      
 </body>
 </html>
