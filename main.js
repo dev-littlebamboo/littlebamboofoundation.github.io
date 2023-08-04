@@ -98,3 +98,34 @@ navigationLinks.forEach(link => {
         loadContent(link.href);
     });
 });
+
+
+
+
+function onLoadContentButtonClick(event) {
+    const button = event.target;
+    const urlToLoad = button.getAttribute('data-url');
+    window.scrollTo(0, 0);
+    fetch(urlToLoad)
+        .then(response => response.text())
+        .then(data => {
+            contentArea.innerHTML = data;
+            // After loading the content, initialize the carousel if it's a testimonials page
+            if (urlToLoad.includes('testimonials.html')) {
+                initializeCarousel();
+            }
+        })
+        .catch(error => {
+            console.error('Error loading content:', error);
+        });
+
+        
+}
+
+// Use event delegation to handle "Read More" button click
+document.addEventListener('click', (event) => {
+    const button = event.target.closest('.btn-load-content');
+    if (button) {
+        onLoadContentButtonClick(event);
+    }
+});
