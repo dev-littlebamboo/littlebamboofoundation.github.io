@@ -90,7 +90,6 @@ function loadHomePage() {
 
 // Call the function to load the home page by default upon page load
 loadHomePage();
-
 navigationLinks.forEach(link => {
     link.addEventListener('click', (event) => {
         event.preventDefault();
